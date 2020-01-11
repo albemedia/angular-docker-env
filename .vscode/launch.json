@@ -1,0 +1,8 @@
+{
+  "name": "Docker Launch",
+  "request": "launch",
+  "preLaunchTask": "compose",
+  "type": "chrome",
+  "url": "http://localhost:4200",
+  "webRoot": "${workspaceFolder}"
+}
