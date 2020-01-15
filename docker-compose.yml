@@ -13,6 +13,7 @@ services:
       - "4200:4200"
     volumes:
       - ./src:/home/app/angular-app/src
+      - /home/app/angular-app/node_modules
     working_dir: /home/app/angular-app
     networks:
       - dev-network

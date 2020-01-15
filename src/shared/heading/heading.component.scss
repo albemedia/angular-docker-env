@@ -1,0 +1,22 @@
+.heading {
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    .heading-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        // .extension {
+            
+        // }
+    }
+
+    span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}

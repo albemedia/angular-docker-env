@@ -1,0 +1,54 @@
+<app-heading>
+    <ng-template appHeadingContent>
+        <button mat-stroked-button [color]="themeColor">Added A Button</button>
+        <button mat-flat-button [color]="themeColor">Another Button</button>
+    </ng-template>
+</app-heading>
+
+<div class="cards">
+    <div class="big-crd">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Scatter Chart Test
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Scatter
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <app-chart [options]="getScatterChart()" [chartId]="'scatter-chart'"></app-chart>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="crd">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Jane and John's Fruit Consumption
+                </mat-card-title>
+                <mat-card-subtitle>
+                    By Quantity
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <app-chart [options]="getFruitBarChart()" [chartId]="'bar-chart'"></app-chart>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="crd">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Average fruit consumption
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Over a week
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <app-chart [options]="getSplineBarChart()" chartId="spline-chart"></app-chart>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
